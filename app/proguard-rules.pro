@@ -1,0 +1,3 @@
+-dontwarn javax.annotation.**
+-keep class com.awake.alarm.data.** { *; }
+-keep class * extends androidx.room.RoomDatabase

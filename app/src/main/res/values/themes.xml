@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Awake" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#0D0D12</item>
+        <item name="android:statusBarColor">#0D0D12</item>
+        <item name="android:navigationBarColor">#0D0D12</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.Awake.Ringing" parent="Theme.Awake">
+        <item name="android:showWhenLocked">true</item>
+        <item name="android:turnScreenOn">true</item>
+        <item name="android:showOnLockScreen">true</item>
+        <item name="android:excludeFromRecents">true</item>
+    </style>
+</resources>
