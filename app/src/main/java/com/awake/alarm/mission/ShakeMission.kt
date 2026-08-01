@@ -172,13 +172,13 @@ class ShakeMission(
                         radius = size.minDimension / 2 - 8.dp.toPx(),
                         style = Stroke(width = 12.dp.toPx(), cap = StrokeCap.Round)
                     )
-                }
-
-                // Progress ring
-                Canvas(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .scale(pulseScale)
+                }                // Progress ring
+                Canvas(modifier = Modifier
+                    .fillMaxSize()
+                    .graphicsLayer {
+                        scaleX = pulseScale
+                        scaleY = pulseScale
+                    }
                 ) {
                     val sweepAngle = 360f * progressAnim
                     drawArc(
