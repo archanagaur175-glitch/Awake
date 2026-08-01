@@ -8,9 +8,6 @@
     </style>
 
     <style name="Theme.Awake.Ringing" parent="Theme.Awake">
-        <item name="android:showWhenLocked">true</item>
-        <item name="android:turnScreenOn">true</item>
-        <item name="android:showOnLockScreen">true</item>
         <item name="android:excludeFromRecents">true</item>
     </style>
 </resources>
